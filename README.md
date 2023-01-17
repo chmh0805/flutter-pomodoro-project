@@ -14,3 +14,12 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+---   
+### 1. Make Default UI
+![image](https://user-images.githubusercontent.com/63082842/212934242-999a145b-0e35-4529-9037-1fb1b0a46d4c.png)
+
+---   
+### 2. Make Start Button and Function
+![image](https://user-images.githubusercontent.com/63082842/212934628-aff1fc46-da00-4532-a25a-a78491d9374e.png)
+
