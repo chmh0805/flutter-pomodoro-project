@@ -23,3 +23,6 @@ samples, guidance on mobile development, and a full API reference.
 ### 2. Make Start Button and Function
 ![image](https://user-images.githubusercontent.com/63082842/212934628-aff1fc46-da00-4532-a25a-a78491d9374e.png)
 
+---   
+### 3. Make Pause Button and Function
+![image](https://user-images.githubusercontent.com/63082842/213453372-8aeb3e5b-8d8b-4148-862a-861352c9933c.png)
