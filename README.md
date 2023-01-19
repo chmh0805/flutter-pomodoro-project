@@ -30,3 +30,7 @@ samples, guidance on mobile development, and a full API reference.
 ---   
 ### 4. Format remain seconds
 ![image](https://user-images.githubusercontent.com/63082842/213455425-0fed0c12-1398-4c4a-92c2-b745b20b9c3e.png)
+
+---   
+### 5. Make Reset Button and Function
+![image](https://user-images.githubusercontent.com/63082842/213469805-3c42b143-8a5a-4da1-a527-d2c8a6aef4c5.png)
