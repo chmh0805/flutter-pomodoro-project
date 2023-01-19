@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:pomodoro/screens/main_button.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -10,7 +11,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  static const twentyFiveMinutes = 60;
+  static const twentyFiveMinutes = 1500;
   int totalSeconds = twentyFiveMinutes;
   bool isRunning = false;
   int totalPomodoros = 0;
@@ -45,6 +46,14 @@ class _HomeScreenState extends State<HomeScreen> {
     });
   }
 
+  void onResetPressed() {
+    timer.cancel();
+    setState(() {
+      totalSeconds = twentyFiveMinutes;
+      isRunning = false;
+    });
+  }
+
   String format(int seconds) {
     var duration = Duration(seconds: seconds);
     return duration.toString().split('.').first.substring(2);
@@ -70,18 +79,28 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
           Flexible(
             flex: 3,
-            child: Center(
-              child: IconButton(
-                iconSize: 120,
-                color: Theme.of(context).cardColor,
-                icon: Icon(
-                  isRunning
-                      ? Icons.pause_circle_outline
-                      : Icons.play_circle_outline,
-                ),
-                onPressed: isRunning ? onPausePressed : onStartPressed,
-              ),
-            ),
+            child: isRunning
+                ? Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.end,
+                    children: [
+                      MainButton(
+                        onPressed: onPausePressed,
+                        icon: const Icon(Icons.pause_circle_outline),
+                        iconSize: 120,
+                      ),
+                      MainButton(
+                        onPressed: onResetPressed,
+                        icon: const Icon(Icons.restore_outlined),
+                        iconSize: 60,
+                      ),
+                    ],
+                  )
+                : MainButton(
+                    onPressed: onStartPressed,
+                    icon: const Icon(Icons.play_circle_outline),
+                    iconSize: 120,
+                  ),
           ),
           Flexible(
             flex: 1,
