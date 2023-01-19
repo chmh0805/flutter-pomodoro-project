@@ -26,3 +26,7 @@ samples, guidance on mobile development, and a full API reference.
 ---   
 ### 3. Make Pause Button and Function
 ![image](https://user-images.githubusercontent.com/63082842/213453372-8aeb3e5b-8d8b-4148-862a-861352c9933c.png)
+
+---   
+### 4. Format remain seconds
+![image](https://user-images.githubusercontent.com/63082842/213455425-0fed0c12-1398-4c4a-92c2-b745b20b9c3e.png)
