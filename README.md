@@ -1,6 +1,7 @@
 # pomodoro
 
-A new Flutter project.
+A new Flutter project.   
+Origin Lecture: https://nomadcoders.co/flutter-for-beginners #5 POMODORO APP
 
 ## Getting Started
 
